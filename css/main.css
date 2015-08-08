@@ -1,10 +1,11 @@
 #top{
-  background: white;
+  background: #222930;
 
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
+  border-bottom: solid 5px #4eb1ba;
 
 }
 #logo{
@@ -22,15 +23,20 @@ h1{
   margin:15px 0;
   font-weight: normal;
   line-height: 0.8em;
-  color:#888888;
+  color:white;
 }
 
 h2{
   font-size: 0.75em;
   margin: -5px 0 0 ;
   font-weight: normal;
-  color:#888888;
+  color:white;
 
+}
+h3 {
+  margin: 0 0 1em 0;
+  color:#4eb1ba;
+  text-align: center;
 }
 
 
@@ -40,7 +46,7 @@ h2{
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0 ;
-  background: black;
+  background: #222930;
 
 }
 
@@ -57,12 +63,12 @@ padding: 15px 10px;
 }
 /* Changes the state of the navigation links */
 nav a.selected,nav a:hover{
-  color:#888888;
+  color:#4eb1ba;
 }
 
 p{
 
-  color:green;
+  color:black;
 }
 
 
@@ -70,12 +76,10 @@ p{
 
 a{
   text-decoration: none;
+  color:white;
 
 }
-body{
-  font-family: 'Open Sans', sans-serif;
-  background: #888888;
-}
+
 
 /******** BODY *********
  ************************/
@@ -86,6 +90,55 @@ body{
   margin:  0 auto;
   padding: 0 5%;
 }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: white;
+}
+
+/****
+Paragraph for the about page
+*****/
+#section_tag p{
+  color: black;
+}
+
+/********
+Contact Page
+
+********/
+.contact{
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.contact a{
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+
+}
+
+.contact h3{
+  text-align: left;
+}
+.contact li.mob a{
+  background-image: url('../img/phone.png');
+  color: black;
+}
+.contact li.mail a{
+  background-image: url('../img/mail.png');
+  color: black;
+}
+
+
+
   /* Site body   */
 
 /***
@@ -125,13 +178,26 @@ img{
 
 }
 
+/**
+Profile Photo
+****/
+
+.profile-photo{
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  float: left;
+  border-radius: 100%;
+
+}
 
 
 /******** FOOTER *********
  ************************/
 
 footer img {
-opacity: 0.5;
+background-color: white;
+opacity: 0.4;
 
 }
 footer img:hover{
