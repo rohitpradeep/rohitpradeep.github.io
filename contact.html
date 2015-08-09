@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,800|Lato:400,900,900italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
   </head>
   <body>
     <div id="top">
@@ -28,26 +30,41 @@
 
     <div id="section_tag">
       <section>
-        <h3>Make an enquiry</h3>
+        <div id="form" class="primary">
+
+        <p> The server side of the form is not setup yet.</p>
         <form>
-          First Name:
-          <input type="text" name="firstname">
-          Last Name:
-          <input type="text" name="lastname">
-          <br>
-
-          Email:
-          <input type="text" name="email">
-          <br>
+          <h3>Email</h3>
+          <fieldset>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="nameofcontact">
 
 
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="emailid">
+
+          </fieldset>
+
+          <fieldset>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" cols="28" rows="5"></textarea>
+
+
+            <button type="submit" name="submit" >Send me an Email</button>
+          </fieldset>
         </form>
+         </div>
        </section>
-       <section class="contact">
-        <h3> Contact Details</h3>
+
+       <section class="contact" id="secondary">
+        <h3> Other Contact Details</h3>
         <ul class ="contact info">
-          <li class="mob"> <a href="tel:0211345507">0211345507</a></li>
-          <li class="mail"> <a href="mailto:rohit.pradeepnz@gmail.com">rohit.pradeepnz@gmail.com</a></li>
+          <li class="mob"> <a href="tel:0211345507">123 3654 655</a></li>
+          <li class="twitter"> <a href="https://twitter.com/RohitPradeep99">@RohitPradeep99</a></li>
 
         </ul>
 

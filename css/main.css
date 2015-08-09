@@ -1,3 +1,10 @@
+
+/******************
+Top Section
+******************/
+
+
+
 #top{
   background: #222930;
 
@@ -36,7 +43,7 @@ h2{
 h3 {
   margin: 0 0 1em 0;
   color:#4eb1ba;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -89,6 +96,7 @@ a{
   max-width:940px;
   margin:  0 auto;
   padding: 0 5%;
+
 }
 
 body{
@@ -103,17 +111,37 @@ Paragraph for the about page
   color: black;
 }
 
+/**************
+ABOUT ME PAGE
+**************/
+
+.aboutme img{
+  align:right;
+}
+.aboutme h3{
+  text-align: center;
+}
+
 /********
 Contact Page
 
 ********/
 .contact{
-  float: right;
+  float: left;
   list-style: none;
-  margin: 0;
+  margin: 0 50px 0 50px;
   padding: 0;
   font-size: 0.9em;
+
+
 }
+
+.primary{
+  float: left;
+  width: 45%;
+}
+
+
 
 .contact a{
   display: block;
@@ -126,17 +154,52 @@ Contact Page
 }
 
 .contact h3{
-  text-align: left;
+  text-align: center;
 }
 .contact li.mob a{
   background-image: url('../img/phone.png');
   color: black;
+
 }
-.contact li.mail a{
-  background-image: url('../img/mail.png');
+.contact li.twitter a{
+  background-image: url('../img/twitter.png');
   color: black;
 }
 
+/******
+Form Styling
+******/
+
+form{
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+form h3{
+  text-align: center;
+}
+
+label{
+  display:block;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+button{
+  background-color: #4eb1ba;
+
+  font-style: normal;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 1px 1px 3px;
+  width: 300px;
+
+}
 
 
   /* Site body   */
